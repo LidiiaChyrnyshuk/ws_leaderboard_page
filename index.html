@@ -154,7 +154,7 @@
 			}
 			.leaderboard_page_wrapper a {
 				outline: none;
-				text-decoration: none;
+				/* text-decoration: none; */
 			}
 			img,
 			video {
@@ -384,6 +384,88 @@
 			.leaderboard_page_legends_list_item3 {
 				grid-area: item3;
 			}
+			.leaderboard_page_legends_list_item1 {
+				position: relative;
+				width: 360px;
+				height: 330px;
+				border-radius: 24px;
+				padding: 8px;
+				background: radial-gradient(
+					50.23% 36.8% at 50.23% 63.79%,
+					#ffb067 0.29%,
+					#341809 100%
+				);
+				overflow: hidden;
+			}
+			.leaderboard_page_legends_list_item1::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				pointer-events: none;
+				z-index: 2;
+				background-image: url(./images/img_card_1.png);
+				opacity: 0.8;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				overflow: hidden;
+			}
+
+			.leaderboard_page_legends_list_item2 {
+				position: relative;
+				width: 360px;
+				height: 330px;
+				border-radius: 24px;
+				padding: 8px;
+				background: radial-gradient(
+					50.23% 36.8% at 50.23% 63.79%,
+					#67abff 0%,
+					#091c34 100%
+				);
+				overflow: hidden;
+			}
+
+			.leaderboard_page_legends_list_item2::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				pointer-events: none;
+				z-index: 2;
+				background-image: url(./images/img_card_2.png);
+				opacity: 0.8;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				overflow: hidden;
+			}
+
+			.leaderboard_page_legends_list_item3 {
+				position: relative;
+				width: 360px;
+				height: 330px;
+				border-radius: 24px;
+				padding: 8px;
+				background: radial-gradient(
+					50.23% 36.8% at 50.23% 63.79%,
+					#ff8c52 0%,
+					#340909 100%
+				);
+				overflow: hidden;
+			}
+
+			.leaderboard_page_legends_list_item3::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				pointer-events: none;
+				z-index: 2;
+				background-image: url(./images/img_card_3.png);
+				opacity: 0.8;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				overflow: hidden;
+			}
 
 			@media (min-width: 960px) {
 				.leaderboard_page_legends_list {
@@ -400,6 +482,19 @@
 			.leaderboard_page_legends_list img {
 				width: 100%;
 				height: 100%;
+			}
+
+			.leaderboard_page_legends_list a {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				z-index: 5;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				text-decoration: none !important;
+
 			}
 
 			/* -----focus--------- */
@@ -854,6 +949,7 @@
 				line-height: 150%;
 				text-align: center;
 				vertical-align: middle;
+				text-decoration: none !important;
 			}
 			@media screen and (min-width: 960px) {
 				.leaderboard_page_info_button {
@@ -979,10 +1075,18 @@
 							>
 								<div class="leaderboard_page_top_list_item_user_wrap">
 									<div class="leaderboard_page_top_list_item_user">
-										<div class="leaderboard_page_top_list_item_user_number leaderboard_page_top_list_item_user_number_ring">2</div>
-										<a class="leaderboard_page_top_list_item_user_name" href="#">RoyalFlush88</a>
+										<div
+											class="leaderboard_page_top_list_item_user_number leaderboard_page_top_list_item_user_number_ring"
+										>
+											2
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>RoyalFlush88</a
+										>
 									</div>
-									<div class="leaderboard_page_top_list_item_user_bets">18 000</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										18 000
+									</div>
 								</div>
 							</li>
 							<li
@@ -990,197 +1094,307 @@
 							>
 								<div class="leaderboard_page_top_list_item_user_wrap">
 									<div class="leaderboard_page_top_list_item_user">
-										<div class="leaderboard_page_top_list_item_user_number leaderboard_page_top_list_item_user_number_ring">3</div>
-										<a href="#">JackpotJill</a>
+										<div
+											class="leaderboard_page_top_list_item_user_number leaderboard_page_top_list_item_user_number_ring"
+										>
+											3
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>JackpotJill</a
+										>
 									</div>
-									<div class="leaderboard_page_top_list_item_user_bets">12 500</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										12 500
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>4</div>
-										<a href="#">RoyalFlush88</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											4
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>RoyalFlush88</a
+										>
 									</div>
-									<div>4 200</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										4 200
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>5</div>
-										<a href="#">JackpotJill</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											5
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>JackpotJill</a
+										>
 									</div>
-									<div>3 500</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										3 500
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>6</div>
-										<a href="#">BonusBob</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											6
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>BonusBob</a
+										>
 									</div>
-									<div></div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										3 200
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>7</div>
-										<a href="#">WinningWendy</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											7
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>WinningWendy</a
+										>
 									</div>
-									<div>3 100</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										3 100
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>8</div>
-										<a href="#">SlotsSam</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											8
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>SlotsSam</a
+										>
 									</div>
-									<div>2 800</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										2 800
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>9</div>
-										<a href="#">SlotsSam</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											9
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>SlotsSam</a
+										>
 									</div>
-									<div>2 800</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										2 800
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>10</div>
-										<a href="#">CardsCarl</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											10
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>CardsCarl</a
+										>
 									</div>
-									<div>4 200</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										4 200
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>11</div>
-										<a href="#">DiceDave</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											11
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>DiceDave</a
+										>
 									</div>
-									<div>3 500</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										3 500
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>12</div>
-										<a href="#">VegasValerie</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											12
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>VegasValerie</a
+										>
 									</div>
-									<div>3 500</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										3 500
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>13</div>
-										<a href="#">CasinoChris</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											13
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>CasinoChris</a
+										>
 									</div>
-									<div>3 500</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										3 500
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>14</div>
-										<a href="#">CasinoChris</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											14
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>CasinoChris</a
+										>
 									</div>
-									<div>4 200</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										4 200
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>15</div>
-										<a href="#">ReelsRyan</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											15
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>ReelsRyan</a
+										>
 									</div>
-									<div>2 800</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										2 800
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>16</div>
-										<a href="#">ChipsChelsea</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											16
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>ChipsChelsea</a
+										>
 									</div>
-									<div>3 500</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										3 500
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>17</div>
-										<a href="#">GambleGreg</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											17
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>GambleGreg</a
+										>
 									</div>
-									<div>4 200</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										4 200
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>18</div>
-										<a href="#">ProfitPam</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											18
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>ProfitPam</a
+										>
 									</div>
-									<div>2 800</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										2 800
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>19</div>
-										<a href="#">WagerWill</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											19
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>WagerWill</a
+										>
 									</div>
-									<div>3 500</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										3 500
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-others"
 							>
-								<div>
-									<div>
-										<div>20</div>
-										<a href="#">SpinsSophia</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number">
+											20
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>SpinsSophia</a
+										>
 									</div>
-									<div>4 200</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										4 200
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -1216,6 +1430,25 @@
 						</div>
 						<a class="leaderboard_page_info_button" href="#">Take your spot</a>
 					</section>
+					<ul class="leaderboard_page_legends_list">
+						<li class="leaderboard_page_legends_list_item1">
+							<a href="#">
+								<div class="leaderboard_page_legends_list_item_header">
+									<div class="leaderboard_page_legends_list_item_header_user">LuckyAce77</div>
+									<div class="leaderboard_page_legends_list_item_data">Registered: 15.02.23</div>
+								</div>
+								<div class="leaderboard_page_legends_list_item_footer">
+									<div class="leaderboard_page_legends_list_item_footer_total">325 000 USDT</div>
+								</div>
+							</a>
+						</li>
+						<li class="leaderboard_page_legends_list_item2">
+							<a href="#"></a>
+						</li>
+						<li class="leaderboard_page_legends_list_item3">
+							<a href="#"></a>
+						</li>
+					</ul>
 				</main>
 			</div>
 		</div>

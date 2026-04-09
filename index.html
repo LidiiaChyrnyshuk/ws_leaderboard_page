@@ -154,7 +154,7 @@
 			}
 			.leaderboard_page_wrapper a {
 				outline: none;
-				text-decoration: none !important;
+				text-decoration: none;
 			}
 			img,
 			video {
@@ -287,16 +287,52 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-			}
-
-			.leaderboard_page_legends_title_img {
-				height: 24px;
+				gap: 8px;
 				margin-bottom: 8px;
 			}
 			@media screen and (min-width: 960px) {
-				.leaderboard_page_legends_title_img {
-					height: 31px;
+				.leaderboard_page_legends_title {
 					margin-bottom: 16px;
+				}
+			}
+
+			.leaderboard_page_legends_title_img {
+				width: 24px;
+				height: 24px;
+			}
+			@media screen and (min-width: 960px) {
+				.leaderboard_page_legends_title_img {
+					width: 30px;
+					height: 30px;
+				}
+			}
+
+			.leaderboard_page_legends_title_text {
+				font-family:
+					Stolzl,
+					Inter,
+					-apple-system,
+					BlinkMacSystemFont,
+					Segoe UI,
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					Fira Sans,
+					Droid Sans,
+					Helvetica Neue,
+					sans-serif !important;
+				font-weight: 700;
+				font-style: Bold;
+				font-size: 22px;
+				line-height: 110.00000000000001%;
+				letter-spacing: 0%;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			@media screen and (min-width: 960px) {
+				.leaderboard_page_legends_title_text {
+					font-size: 28px;
 				}
 			}
 
@@ -450,16 +486,52 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				gap: 8px;
+				margin-bottom: 8px;
+			}
+
+			@media screen and (min-width: 960px) {
+				.leaderboard_page_top_title {
+					margin-bottom: 16px;
+				}
 			}
 
 			.leaderboard_page_top_title_img {
+				width: 24px;
 				height: 24px;
-				margin-bottom: 8px;
 			}
 			@media screen and (min-width: 960px) {
 				.leaderboard_page_top_title_img {
-					height: 31px;
-					margin-bottom: 16px;
+					width: 30px;
+					height: 30px;
+				}
+			}
+
+			.leaderboard_page_top_title_text {
+				font-family:
+					Stolzl,
+					Inter,
+					-apple-system,
+					BlinkMacSystemFont,
+					Segoe UI,
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					Fira Sans,
+					Droid Sans,
+					Helvetica Neue,
+					sans-serif !important;
+				font-weight: 700;
+				font-style: Bold;
+				font-size: 22px;
+				line-height: 110.00000000000001%;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			@media screen and (min-width: 960px) {
+				.leaderboard_page_top_title_text {
+					font-size: 28px;
 				}
 			}
 
@@ -516,7 +588,7 @@
 				text-transform: uppercase;
 			}
 			.leaderboard_page_top_list_header_total {
-								font-family:
+				font-family:
 					Stolzl,
 					Inter,
 					-apple-system,
@@ -544,7 +616,128 @@
 				border-radius: 16px;
 				border: 1px solid #e2e7ec;
 				background: #f1f3f5;
-				padding: 16x;
+				padding: 16px;
+			}
+
+			.leaderboard_page_top_list_item-1 {
+				background-color: #f1f3f5;
+				background-image: linear-gradient(
+					90deg,
+					#ffb82a 0%,
+					rgba(255, 255, 255, 0) 100%
+				);
+			}
+
+			.leaderboard_page_top_list_item-2 {
+				background-color: #f1f3f5;
+				background-image: linear-gradient(
+					90deg,
+					#9db3cf 0%,
+					rgba(255, 255, 255, 0) 100%
+				);
+			}
+
+			.leaderboard_page_top_list_item-3 {
+				background-color: #f1f3f5;
+				background-image: linear-gradient(
+					90deg,
+					#ff9d7d 0%,
+					rgba(255, 255, 255, 0) 100%
+				);
+			}
+
+			.leaderboard_page_top_list_item_user_wrap {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.leaderboard_page_top_list_item_user {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 24px;
+			}
+
+			.leaderboard_page_top_list_item_user_number {
+				font-family:
+					Stolzl,
+					Inter,
+					-apple-system,
+					BlinkMacSystemFont,
+					Segoe UI,
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					Fira Sans,
+					Droid Sans,
+					Helvetica Neue,
+					sans-serif !important;
+				font-weight: 400;
+				font-style: Regular;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+				vertical-align: middle;
+				width: 24px;
+				height: 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.leaderboard_page_top_list_item_user_number_ring {
+				background: #ffffff;
+				border-radius: 50%;
+			}
+
+			.leaderboard_page_top_list_item_user_name {
+				font-family:
+					Stolzl,
+					Inter,
+					-apple-system,
+					BlinkMacSystemFont,
+					Segoe UI,
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					Fira Sans,
+					Droid Sans,
+					Helvetica Neue,
+					sans-serif !important;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 16px;
+				line-height: 20px;
+				vertical-align: middle;
+				text-decoration: underline !important;
+				text-decoration-style: solid !important;
+				color: #34414d !important;
+			}
+
+			.leaderboard_page_top_list_item_user_bets {
+				font-family:
+					Stolzl,
+					Inter,
+					-apple-system,
+					BlinkMacSystemFont,
+					Segoe UI,
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					Fira Sans,
+					Droid Sans,
+					Helvetica Neue,
+					sans-serif !important;
+				font-weight: 500;
+				font-style: normal;
+				font-size: 16px;
+				line-height: 20px;
+				vertical-align: middle;
+				color: #34414d !important;
 			}
 
 			/*-----info---------- */
@@ -560,16 +753,52 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				gap: 8px;
+				margin-bottom: 8px;
+			}
+
+			@media screen and (min-width: 960px) {
+				.leaderboard_page_info_title {
+					margin-bottom: 16px;
+				}
 			}
 
 			.leaderboard_page_info_title_img {
+				width: 24px;
 				height: 24px;
-				margin-bottom: 8px;
 			}
 			@media screen and (min-width: 960px) {
 				.leaderboard_page_info_title_img {
-					height: 31px;
-					margin-bottom: 16px;
+					width: 30px;
+					height: 30px;
+				}
+			}
+
+			.leaderboard_page_info_title_text {
+				font-family:
+					Stolzl,
+					Inter,
+					-apple-system,
+					BlinkMacSystemFont,
+					Segoe UI,
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					Fira Sans,
+					Droid Sans,
+					Helvetica Neue,
+					sans-serif !important;
+				font-weight: 700;
+				font-style: Bold;
+				font-size: 22px;
+				line-height: 110.00000000000001%;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			@media screen and (min-width: 960px) {
+				.leaderboard_page_info_title_text {
+					font-size: 28px;
 				}
 			}
 
@@ -597,6 +826,41 @@
 				max-width: 680px;
 				margin-bottom: 32px;
 			}
+
+			.leaderboard_page_info_button {
+				width: 100%;
+				max-width: 680px;
+				border-radius: 8px;
+				background: #6352ff;
+				padding: 12px 24px;
+				color: #ffffff;
+				font-family:
+					Stolzl,
+					Inter,
+					-apple-system,
+					BlinkMacSystemFont,
+					Segoe UI,
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					Fira Sans,
+					Droid Sans,
+					Helvetica Neue,
+					sans-serif !important;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 16px;
+				line-height: 150%;
+				text-align: center;
+				vertical-align: middle;
+			}
+			@media screen and (min-width: 960px) {
+				.leaderboard_page_info_button {
+					width: fit-content;
+					min-width: 193px;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -607,13 +871,22 @@
 						<div class="leaderboard_page_legends_title">
 							<img
 								class="leaderboard_page_legends_title_img"
-								src="./images/🤩 WEISS legends.png"
+								src="./images/icon_smile.png"
+								alt=""
+							/>
+							<div class="leaderboard_page_legends_title_text">
+								WEISS HALL OF FAME
+							</div>
+							<img
+								class="leaderboard_page_legends_title_img"
+								src="./images/icon_smile.png"
 								alt=""
 							/>
 						</div>
 						<div class="leaderboard_page_legends_subtitle">
-							Meet the top three champions leading the WEISS leaderboard — your
-							inspiration to climb higher!
+							These are the names that set the standard at WEISS.BET - the ones
+							who turned consistency, bold decisions, and serious play into
+							lasting recognition!
 						</div>
 						<ul class="leaderboard_page_legends_list">
 							<li class="leaderboard_page_legends_list_item1">
@@ -639,18 +912,15 @@
 							/>
 							<div class="leaderboard_page_focus_title_text">
 								<span class="leaderboard_page_focus_title_text"
-									>Want to get on the WEISS</span
-								>
-								<span class="leaderboard_page_focus_title_text"
-									>leaderboard?</span
-								>
+									>Earn Your Place Among
+								</span>
+								<span class="leaderboard_page_focus_title_text">the Best</span>
 							</div>
 						</div>
 						<div class="leaderboard_page_focus_text">
-							Focus on playing regularly and performing well in games and
-							tournaments to earn points. Only the top 20 scorers make it, so
-							keep improving and stay active to climb the ranks and become a
-							community legend.
+							A place in the monthly Top 20 means your name is no longer just
+							part of the crowd! It becomes a visible mark of discipline and
+							presence among paltform’s strongest players.
 						</div>
 					</section>
 
@@ -658,7 +928,13 @@
 						<div class="leaderboard_page_top_title">
 							<img
 								class="leaderboard_page_top_title_img"
-								src="./images/🏆 April TOP 20.png"
+								src="./images/icon_chalice.png"
+								alt=""
+							/>
+							<div class="leaderboard_page_top_title_text">April TOP 20</div>
+							<img
+								class="leaderboard_page_top_title_img"
+								src="./images/icon_chalice.png"
 								alt=""
 							/>
 						</div>
@@ -682,34 +958,42 @@
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-1"
 							>
-								<div>
-									<div>
-										<div>1</div>
-										<a href="#">LuckyAce77</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div
+											class="leaderboard_page_top_list_item_user_number leaderboard_page_top_list_item_user_number_ring"
+										>
+											1
+										</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#"
+											>LuckyAce77</a
+										>
 									</div>
-									<div>20 000</div>
+									<div class="leaderboard_page_top_list_item_user_bets">
+										20 000
+									</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-2"
 							>
-								<div>
-									<div>
-										<div>2</div>
-										<a href="#">RoyalFlush88</a>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number leaderboard_page_top_list_item_user_number_ring">2</div>
+										<a class="leaderboard_page_top_list_item_user_name" href="#">RoyalFlush88</a>
 									</div>
-									<div>18 000</div>
+									<div class="leaderboard_page_top_list_item_user_bets">18 000</div>
 								</div>
 							</li>
 							<li
 								class="leaderboard_page_top_list_item leaderboard_page_top_list_item-3"
 							>
-								<div>
-									<div>
-										<div>3</div>
+								<div class="leaderboard_page_top_list_item_user_wrap">
+									<div class="leaderboard_page_top_list_item_user">
+										<div class="leaderboard_page_top_list_item_user_number leaderboard_page_top_list_item_user_number_ring">3</div>
 										<a href="#">JackpotJill</a>
 									</div>
-									<div>12 500</div>
+									<div class="leaderboard_page_top_list_item_user_bets">12 500</div>
 								</div>
 							</li>
 							<li
@@ -906,24 +1190,31 @@
 						<div class="leaderboard_page_info_title">
 							<img
 								class="leaderboard_page_info_title_img"
-								src="./images/ℹ️ How to get to the top_.png"
-								alt="info"
+								src="./images/icon_info.png"
+								alt=""
+							/>
+							<div class="leaderboard_page_info_title_text">
+								HOW RANKINGS ARE BUILT
+							</div>
+							<img
+								class="leaderboard_page_info_title_img"
+								src="./images/icon_info.png"
+								alt=""
 							/>
 						</div>
 						<div class="leaderboard_page_info_text">
-							The WEISS leaderboard ranks players based on their performance in
-							games and tournaments, showcasing the most skilled and active
-							participants.<br /><br />
-							Points are earned through consistent play and success in
-							competitions. Only the top 20 players with the highest scores make
-							it onto the leaderboard, earning recognition as legends in the
-							community.<br /><br />
-							Climbing the ranks motivates players to improve and engage more
-							deeply with the platform.
+							The WEISS leaderboard is based on total bet volume across the
+							month. The more active you are, the more your position raises -
+							and so can everyone else’s.<br /><br />
+							You can check your current ranking in this month's continuously
+							updated leaderboard <a href="#">here</a>.<br /><br />
+							At the end of each month, the Top 20 is locked in, while the race
+							begins again from zero. The Hall of Fame remains reserved for the
+							all-time best cumulative results.<br /><br />
+							No place is guaranteed until the month is over. Stay active, keep
+							building volume, and make sure your place this month speaks for
 						</div>
-						<a class="leaderboard_page_info_button" href="#"
-							>Climb the Leaderboard</a
-						>
+						<a class="leaderboard_page_info_button" href="#">Take your spot</a>
 					</section>
 				</main>
 			</div>

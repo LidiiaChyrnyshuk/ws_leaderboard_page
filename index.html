@@ -386,7 +386,7 @@
 			}
 			.leaderboard_page_legends_list_item1 {
 				position: relative;
-				width: 360px;
+				width: 100%;
 				height: 330px;
 				border-radius: 24px;
 				padding: 8px;
@@ -403,17 +403,17 @@
 				inset: 0;
 				pointer-events: none;
 				z-index: 2;
-				background-image: url(./images/card_1.png);
-				opacity: 1;
+				background-image: url(./images/img_card_1.png);
+				opacity: 0.8;
 				background-repeat: no-repeat;
-				background-size: 100% 100%;
+				background-size: contain;
 				background-position: center;
 				overflow: hidden;
 			}
 
 			.leaderboard_page_legends_list_item2 {
 				position: relative;
-				width: 360px;
+				width: 100%;
 				height: 330px;
 				border-radius: 24px;
 				padding: 8px;
@@ -431,17 +431,17 @@
 				inset: 0;
 				pointer-events: none;
 				z-index: 2;
-				background-image: url(./images/card_2.png);
-				opacity: 1;
+				background-image: url(./images/img_card_2.png);
+				opacity: 0.8;
 				background-repeat: no-repeat;
-				background-size: 100% 100%;
+				background-size: contain;
 				background-position: center;
 				overflow: hidden;
 			}
 
 			.leaderboard_page_legends_list_item3 {
 				position: relative;
-				width: 360px;
+				width: 100%;
 				height: 330px;
 				border-radius: 24px;
 				padding: 8px;
@@ -459,10 +459,10 @@
 				inset: 0;
 				pointer-events: none;
 				z-index: 2;
-				background-image: url(./images/card_3.png);
-				opacity: 1;
+				background-image: url(./images/img_card_3.png);
+				opacity:0.8;
 				background-repeat: no-repeat;
-				background-size: 100% 100%;
+				background-size: contain;
 				background-position: center;
 				overflow: hidden;
 			}
@@ -476,7 +476,8 @@
 			}
 
 			.leaderboard_page_legends_list li {
-				height: 330px;
+				/* height: 330px; */
+				aspect-ratio: 360 / 330;
 			}
 
 			.leaderboard_page_legends_list img {
@@ -1089,59 +1090,65 @@
 							who turned consistency, bold decisions, and serious play into
 							lasting recognition!
 						</div>
-											<ul class="leaderboard_page_legends_list">
-						<li class="leaderboard_page_legends_list_item1">
-							<a href="#">
-								<div class="leaderboard_page_legends_list_item_header">
-									<div class="leaderboard_page_legends_list_item_header_user">
-										LuckyAce77
+						<ul class="leaderboard_page_legends_list">
+							<li class="leaderboard_page_legends_list_item1">
+								<a href="#">
+									<div class="leaderboard_page_legends_list_item_header">
+										<div class="leaderboard_page_legends_list_item_header_user">
+											LuckyAce77
+										</div>
+										<div class="leaderboard_page_legends_list_item_header_data">
+											Registered: 15.02.23
+										</div>
 									</div>
-									<div class="leaderboard_page_legends_list_item_header_data">
-										Registered: 15.02.23
+									<div class="leaderboard_page_legends_list_item_footer">
+										<div
+											class="leaderboard_page_legends_list_item_footer_total"
+										>
+											325 000 USDT
+										</div>
 									</div>
-								</div>
-								<div class="leaderboard_page_legends_list_item_footer">
-									<div class="leaderboard_page_legends_list_item_footer_total">
-										325 000 USDT
+								</a>
+							</li>
+							<li class="leaderboard_page_legends_list_item2">
+								<a href="#">
+									<div class="leaderboard_page_legends_list_item_header">
+										<div class="leaderboard_page_legends_list_item_header_user">
+											RoyalFlush88
+										</div>
+										<div class="leaderboard_page_legends_list_item_header_data">
+											Registered: 21.07.24
+										</div>
 									</div>
-								</div>
-							</a>
-						</li>
-						<li class="leaderboard_page_legends_list_item2">
-							<a href="#">
-								<div class="leaderboard_page_legends_list_item_header">
-									<div class="leaderboard_page_legends_list_item_header_user">
-										RoyalFlush88
+									<div class="leaderboard_page_legends_list_item_footer">
+										<div
+											class="leaderboard_page_legends_list_item_footer_total"
+										>
+											245 000 USDT
+										</div>
 									</div>
-									<div class="leaderboard_page_legends_list_item_header_data">
-										Registered: 21.07.24
+								</a>
+							</li>
+							<li class="leaderboard_page_legends_list_item3">
+								<a href="#">
+									<div class="leaderboard_page_legends_list_item_header">
+										<div class="leaderboard_page_legends_list_item_header_user">
+											JackpotJill
+										</div>
+										<div class="leaderboard_page_legends_list_item_header_data">
+											Registered: 15.03.24
+										</div>
 									</div>
-								</div>
-								<div class="leaderboard_page_legends_list_item_footer">
-									<div class="leaderboard_page_legends_list_item_footer_total">
-										245 000 USDT
+									<div class="leaderboard_page_legends_list_item_footer">
+										<div
+											class="leaderboard_page_legends_list_item_footer_total"
+										>
+											152 500 USDT
+										</div>
 									</div>
-								</div>
-							</a>
-						</li>
-						<li class="leaderboard_page_legends_list_item3">
-							<a href="#">
-								<div class="leaderboard_page_legends_list_item_header">
-									<div class="leaderboard_page_legends_list_item_header_user">
-										JackpotJill
-									</div>
-									<div class="leaderboard_page_legends_list_item_header_data">
-										Registered: 15.03.24
-									</div>
-								</div>
-								<div class="leaderboard_page_legends_list_item_footer">
-									<div class="leaderboard_page_legends_list_item_footer_total">
-										152 500 USDT
-									</div>
-								</div>
-							</a>
-						</li>
-					</ul>
+								</a>
+							</li>
+						</ul>
 					</section>
 
 					<section class="leaderboard_page_focus">
@@ -1577,7 +1584,6 @@
 						</div>
 						<a class="leaderboard_page_info_button" href="#">Take your spot</a>
 					</section>
-
 				</main>
 			</div>
 		</div>

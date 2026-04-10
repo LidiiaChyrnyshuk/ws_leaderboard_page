@@ -272,6 +272,48 @@
 				z-index: 0;
 				background: #ffffff;
 			}
+			.leaderboard_page_main::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				pointer-events: none;
+				z-index: 2;
+				background-image: url(./images/confetti_right.png);
+				opacity: 0.8;
+				background-repeat: no-repeat;
+				background-size: 85.55vw 95.85vw;
+				background-position: bottom right;
+				overflow: hidden;
+			}
+
+			@media screen and (min-width: 960px) {
+				.leaderboard_page_main::after {
+					content: "";
+					position: absolute;
+					inset: 0;
+					pointer-events: none;
+					z-index: 2;
+					background-image: url(./images/confetti_right.png);
+					opacity: 0.8;
+					background-repeat: no-repeat;
+					background-size: 44.82vw 55.55vw;
+					background-position: bottom right;
+					overflow: hidden;
+				}
+				.leaderboard_page_main::before {
+					content: "";
+					position: absolute;
+					inset: 0;
+					pointer-events: none;
+					z-index: 2;
+					background-image: url(./images/confetti_left.png);
+					opacity: 0.8;
+					background-repeat: no-repeat;
+					background-size: 44.82vw 55.55vw;
+					background-position: bottom left;
+					overflow: hidden;
+				}
+			}
 
 			/*------legends-------- */
 
@@ -460,7 +502,7 @@
 				pointer-events: none;
 				z-index: 2;
 				background-image: url(./images/img_card_3.png);
-				opacity:0.8;
+				opacity: 0.8;
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-position: center;
@@ -676,6 +718,8 @@
 			/* --------top-------- */
 
 			.leaderboard_page_top {
+				position: relative;
+				z-index: 5;
 				width: 100%;
 				display: flex;
 				flex-direction: column;
@@ -944,6 +988,8 @@
 			/*-----info---------- */
 
 			.leaderboard_page_info {
+				position: relative;
+				z-index: 5;
 				width: 100%;
 				display: flex;
 				flex-direction: column;
